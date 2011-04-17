@@ -1,1 +1,60 @@
-hooray
+h1. random_ipsum - randomized _Lorem ipsum_
+
+We were sick of the ever-same blindtext made by TextMate etc. So here you go:
+
+<pre>
+  >> require "random_ipsum"
+  => true
+  >> RandomIpsum.words
+  => "Purus vulputate congue scelerisque a"
+  >> RandomIpsum.words(2)
+  => "Justo viverra"
+  >> RandomIpsum.words(2)
+  => "Sed ut"
+  >> RandomIpsum.sentence
+  => "Cras sapien lobortis Eleifend faucibus Porttitor fermentum, commodo eros amet."
+  >> RandomIpsum.sentence(5)
+  => "In risus posuere sit tellus."
+  >> RandomIpsum.paragraphs
+  => "Volutpat commodo ligula tempus blandit dui Suscipit Ornare sem praesent nam cursus. Nisi Nonummy ullamcorper duis auctor lacus phasellus massa, lorem pede.\n\nElit metus tristique augue, tortor Gravida Lobortis Auctor suscipit vel porta tincidunt donec. Amet porta venenatis consequat bibendum integer Morbi et fames, euismod."
+</pre>
+
+h2. Method Signatures
+
+<tt>RandomIpsum.words(nomber_of_words)</tt>
+
+<tt>RandomIpsum.sentence(number_of_words)</tt>
+
+<tt>RandomIpsum.paragraphs(number_of_paragraphs, number_of_sentences, number_of_words)</tt>
+
+h2. Dependencies
+
+We use
+* <a href="http://github.com/provideal/whiny_hash">whiny_hash</a> to handle the options in a fail-early-manner,
+* <a href="http://github.com/provideal/id_stuffer">id_stuffer</a> to compress the _remembered_ ids.
+* And... eh... It's an extension for Rails 3, so it might be handy to have a version of Rails 3 and Ruby 1.8.? or 1.9.?.
+
+h2. Bugs
+
+If you find a bug, please let me know using the <a href="https://github.com/provideal/random_ipsum/issues">GitHub Bugtracker</a>.
+
+h2. Contributing to random_ipsum
+
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the <a href="https://github.com/provideal/random_ipsum/issues">issue tracker</a> to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+* Feel free to send a pull request if you think others (me, for example) would like to have your change incorporated into future versions of random_ipsum.
+
+h2. License
+
+Copyright (c) 2010-2011 Peter Horn, <a href="http://www.provideal.net" target="_blank">Provideal GmbH</a>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
