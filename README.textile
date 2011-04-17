@@ -27,6 +27,26 @@ h2. Method Signatures
 
 <tt>RandomIpsum.paragraphs(number_of_paragraphs, number_of_sentences, number_of_words)</tt>
 
+h2. Changing Parameters
+
+To control the actual output, the following constants may be overridden:
+
+h3. <tt>RandomIpsum::CapitalizedPercent</tt> (default 15)
+
+Average number of capitalized words (apart from the first word in a sentence).
+
+h3. <tt>RandomIpsum::CommaPercent</tt> (default 18)
+
+Average number of words that are followed by a comma.
+
+h3. <tt>RandomIpsum::ParagraphJoiner</tt> (default "\n")
+
+String used to join the individual paragraphs.
+
+h3. <tt>RandomIpsum::SentenceJoiner</tt> (default " ")
+
+String used to join the individual sentences in a paragraph.
+
 h2. Bugs
 
 If you find a bug, please let me know using the <a href="https://github.com/provideal/random_ipsum/issues">GitHub Bugtracker</a>.
