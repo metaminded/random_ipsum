@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
   s.summary     = "A randomized embedded lorem ipsum generator"
-  s.email       = "info@provideal.net"
-  s.homepage    = "http://github.com/provideal/random_ipsum"
+  s.email       = "open-source@metaminded.com"
+  s.homepage    = "http://github.com/metaminded/random_ipsum"
   s.description = "A randomized embedded lorem ipsum generator that can generate words, sentences, or paragraphs."
   s.authors     = ['Peter Horn']
 
